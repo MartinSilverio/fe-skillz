@@ -1,0 +1,47 @@
+@import '../../colors';
+
+.accordion-container {
+  height: 95vh;
+  background-color: $mediumGrey;
+}
+
+.nav-accordion {
+  font-size: 14px;
+  text-transform: uppercase;
+  .nav-accordion-heading {
+    background-color: $mediumGrey;
+    border-bottom: 1px solid $beige;
+
+    .nav-accordion-btn {
+      .accordion-title {
+        font-weight: bold;
+      }
+      .accordion-icon {
+        position: relative;
+        line-height: 0.5;
+        font-size: 30px;
+
+        &.collapse {
+          top: -3px;
+        }
+      }
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .nav-accordion-panel {
+    background-color: $beige;
+    .accordion-subnav {
+      padding: 0;
+      margin: 0;
+
+      .nav-item {
+        padding: 20px;
+        display: flex;
+        justify-content: left;
+      }
+    }
+  }
+}

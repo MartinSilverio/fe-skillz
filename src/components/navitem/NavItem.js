@@ -6,7 +6,7 @@ import './NavItem.scss';
 function NavItem({ navItem }) {
   return (
     <li className='nav-item'>
-      <span>{navItem.title}</span>
+      <a href='#'>{navItem.title}</a>
       {navItem.children && (
         <NavList className='subnav' navItems={navItem.children} />
       )}
