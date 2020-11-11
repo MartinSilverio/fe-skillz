@@ -1,0 +1,35 @@
+@import '../../colors';
+
+.subnav {
+  position: absolute;
+  left: 30px;
+  top: 50px;
+  padding: 0;
+  list-style: none;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.nav-item {
+  position: relative;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 0 50px;
+
+  &:hover {
+    color: $gold;
+    cursor: pointer;
+  }
+  &:hover .subnav {
+    color: $white;
+    padding: 0.5rem;
+    width: 9rem;
+    height: auto;
+    background: $mediumGrey;
+    clip: auto;
+  }
+}
