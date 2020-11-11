@@ -1,11 +1,20 @@
 import React from 'react';
 import NavItem from '../navitem/NavItem';
 
-function NavList({ navItems, ...props }) {
+function NavList({ navItems, setParentFocused, ...props }) {
+  const length = navItems.length;
+
   return (
     <ul {...props}>
-      {navItems.map((navItem) => {
-        return <NavItem key={navItem.id} navItem={navItem} />;
+      {navItems.map((navItem, i) => {
+        return (
+          <NavItem
+            key={navItem.id}
+            navItem={navItem}
+            isLastItem={i === length - 1}
+            setParentFocused={setParentFocused}
+          />
+        );
       })}
     </ul>
   );

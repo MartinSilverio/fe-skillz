@@ -36,12 +36,12 @@
 
   &:hover,
   &:hover a,
-  &:focus a {
+  &.focus a {
     color: $gold;
     cursor: pointer;
   }
   &:hover .subnav,
-  &:focus .subnav {
+  &.focus .subnav {
     a {
       color: $white;
     }
@@ -53,7 +53,8 @@
   }
 
   .subnav {
-    & .nav-item:hover a {
+    & .nav-item:hover a,
+    & .nav-item.focus a {
       color: $gold;
     }
     a {
