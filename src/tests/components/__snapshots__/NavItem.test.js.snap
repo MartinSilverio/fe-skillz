@@ -7,7 +7,6 @@ exports[`NavItem Should not have NavList if navItem has no children 1`] = `
 >
   <NavLink
     activeClassName="selected"
-    aria-expanded={false}
     aria-haspopup={false}
     isActive={[Function]}
     onBlur={[Function]}

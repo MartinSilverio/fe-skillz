@@ -22,13 +22,20 @@ function NavItem({ navItem }) {
     }
   };
 
+  let ariaProps = {
+    'aria-haspopup': !!navItem.children,
+  };
+
+  if (navItem.children) {
+    ariaProps['aria-expanded'] = focused;
+  }
+
   return (
     <li role='none' className='nav-item'>
       <NavLink
         to={navItem.url}
         role='menuitem'
-        aria-haspopup={navItem.children ? true : false}
-        aria-expanded={navItem.children && focused ? true : false}
+        {...ariaProps}
         activeClassName='selected'
         isActive={(match, location) => location.pathname.includes(navItem.url)}
         onFocus={handleFocus}
