@@ -1,3 +1,10 @@
+# How to run the project
+
+To run the project, you can use `npm start` and it will start up on localhost:3000.
+
+You can use `npm test` to run the tests.
+
+
 # Front End Skill Assesment
 
 Thank you so much for your interest in a position on the Front End Development team at The Wonderful Company. We are very excited to continue our interview process with you!
