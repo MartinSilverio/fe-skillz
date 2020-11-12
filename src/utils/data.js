@@ -4,24 +4,25 @@ export const menuData = {
       title: 'Lorem',
       id: 1,
       selected: false,
+      url: 'lorem',
       children: [
         {
           title: 'Dolor',
           id: 11,
           selected: false,
-          url: 'lorem/dolor',
+          url: '/lorem/dolor',
         },
         {
           title: 'Ipsum',
           id: 12,
           selected: false,
-          url: 'lorem/ipsum',
+          url: '/lorem/ipsum',
         },
         {
           title: 'Sit',
           id: 13,
           selected: false,
-          url: 'lorem/sit',
+          url: '/lorem/sit',
         },
       ],
     },
@@ -29,34 +30,35 @@ export const menuData = {
       title: 'Amet',
       id: 2,
       selected: false,
-      url: 'amet',
+      url: '/amet',
     },
     {
-      title: 'Lorem',
+      title: 'Consectetur',
       id: 3,
       selected: false,
+      url: 'consectetur',
       children: [
         {
-          title: 'Dolor',
+          title: 'Adipiscing',
           id: 31,
           selected: false,
-          url: 'lorem/dolor',
+          url: '/consectetur/adipiscing',
         },
         {
-          title: 'Ipsum',
+          title: 'Eiusmod',
           id: 32,
           selected: false,
-          url: 'lorem/ipsum',
+          url: '/consectetur/eiusmod',
         },
         {
-          title: 'Sit',
+          title: 'Tempor',
           id: 33,
           selected: false,
-          url: 'lorem/sit',
+          url: '/consectetur/tempor',
         },
       ],
     },
   ],
 };
 
-// , consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+// ,   elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris

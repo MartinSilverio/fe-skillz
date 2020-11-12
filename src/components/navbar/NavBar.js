@@ -6,6 +6,7 @@ import { MOBILE_BREAKPOINT } from '../../utils/constants';
 
 import './NabBar.scss';
 import logo from '../assets/we_are_wonderful.png';
+import closeIcon from '../assets/close.svg';
 
 function NavBar({ navItems }) {
   const { width } = useWindowDimensions();
@@ -33,7 +34,7 @@ function NavBar({ navItems }) {
               className={`nav-btn  ${openAccordion && 'close'}`}
               aria-label={`${openAccordion ? 'close' : 'open'} menu`}
             >
-              {openAccordion ? '\u2715' : 'MENU'}
+              {openAccordion ? <img src={closeIcon} alt='' /> : 'MENU'}
             </button>
             {!openAccordion && <div className='triangle'></div>}
           </div>

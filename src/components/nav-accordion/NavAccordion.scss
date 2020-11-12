@@ -15,6 +15,9 @@
     .nav-accordion-btn {
       .accordion-title {
         font-weight: bold;
+        &.selected {
+          color: $gold;
+        }
       }
       .accordion-icon {
         position: relative;

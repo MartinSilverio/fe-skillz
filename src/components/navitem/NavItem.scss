@@ -32,16 +32,18 @@
     color: $white;
     font-weight: bold;
     text-transform: uppercase;
+
+    &.selected {
+      color: $gold;
+    }
   }
 
-  &:hover,
   &:hover a,
-  &.focus a {
+  &:focus-within a {
     color: $gold;
-    cursor: pointer;
   }
   &:hover .subnav,
-  &.focus .subnav {
+  &:focus-within .subnav {
     a {
       color: $white;
     }
@@ -54,11 +56,15 @@
 
   .subnav {
     & .nav-item:hover a,
-    & .nav-item.focus a {
+    & .nav-item:focus-within a {
       color: $gold;
     }
     a {
       font-weight: normal;
+
+      &.selected {
+        color: $gold;
+      }
     }
   }
 }
