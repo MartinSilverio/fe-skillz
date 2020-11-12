@@ -22,13 +22,22 @@ function NavItem({ navItem, isLastItem, setParentFocused }) {
   };
 
   return (
-    <li ref={listItem} className={`nav-item ${focused && 'focus'}`}>
-      <a href='#' onFocus={handleFocus} onBlur={handleBlur}>
+    <li role='none' ref={listItem} className={`nav-item ${focused && 'focus'}`}>
+      <a
+        role='menuitem'
+        aria-haspopup={navItem.children ? true : false}
+        aria-expanded={navItem.children && focused ? true : false}
+        href='#'
+        onFocus={handleFocus}
+        onBlur={handleBlur}
+      >
         {navItem.title}
       </a>
       {navItem.children && (
         <NavList
           className='subnav'
+          role='menu'
+          aria-label={navItem.title}
           navItems={navItem.children}
           setParentFocused={setFocused}
         />

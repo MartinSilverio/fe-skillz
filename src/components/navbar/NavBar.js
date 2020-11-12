@@ -16,10 +16,15 @@ function NavBar({ navItems }) {
 
   return (
     <Fragment>
-      <nav id='navbar'>
+      <nav id='navbar' aria-label='This Is Wonderful Navigation'>
         <img className='logo' alt='' src={logo}></img>
         {width > MOBILE_BREAKPOINT && (
-          <NavList className='nav-list' navItems={navItems} />
+          <NavList
+            className='nav-list'
+            navItems={navItems}
+            role='menubar'
+            aria-label='Top Level Navigation'
+          />
         )}
         {width <= MOBILE_BREAKPOINT && (
           <div className='nav-btn-container'>
