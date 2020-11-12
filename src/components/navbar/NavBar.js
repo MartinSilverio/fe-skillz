@@ -5,8 +5,8 @@ import useWindowDimensions from '../../utils/hooks/useWidthDimensions';
 import { MOBILE_BREAKPOINT } from '../../utils/constants';
 
 import './NabBar.scss';
-import logo from '../assets/we_are_wonderful.png';
-import closeIcon from '../assets/close.svg';
+import logo from '../../assets/we_are_wonderful.png';
+import closeIcon from '../../assets/close.svg';
 
 function NavBar({ navItems }) {
   const { width } = useWindowDimensions();

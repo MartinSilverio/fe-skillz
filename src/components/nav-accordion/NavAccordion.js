@@ -73,35 +73,3 @@ function NavAccordion({ navItems }) {
 }
 
 export default NavAccordion;
-
-// {
-/* <AccordionItemButton className='nav-accordion-btn'>
-                  {navItem.children ? (
-                    <span className='accordion-title'>{navItem.title}</span>
-                  ) : (
-                    <NavLink
-                      to={navItem.url}
-                      role='menuitem'
-                      className='accordion-title'
-                      activeClassName='selected'
-                      isActive={(match, location) =>
-                        location.pathname.includes(navItem.url)
-                      }
-                    >
-                      {navItem.title}
-                    </NavLink>
-                  )}
-
-                  {navItem.children && (
-                    <AccordionItemState>
-                      {({ expanded }) =>
-                        expanded ? (
-                          <span className='accordion-icon collapse'>-</span>
-                        ) : (
-                          <span className='accordion-icon expand'>+</span>
-                        )
-                      }
-                    </AccordionItemState>
-                  )}
-                </AccordionItemButton> */
-// }
