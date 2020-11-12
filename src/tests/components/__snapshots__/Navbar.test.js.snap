@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar should display a navbar given data if window size is bigger than 800px 1`] = `
+<Fragment>
+  <nav
+    aria-label="This Is Wonderful Navigation"
+    id="navbar"
+  >
+    <img
+      alt=""
+      className="logo"
+      src="we_are_wonderful.png"
+    />
+    <NavList
+      aria-label="Top Level Navigation"
+      className="nav-list"
+      navItems={
+        Array [
+          Object {
+            "children": Array [
+              Object {
+                "id": 11,
+                "selected": false,
+                "title": "Dolor",
+                "url": "/lorem/dolor",
+              },
+              Object {
+                "id": 12,
+                "selected": false,
+                "title": "Ipsum",
+                "url": "/lorem/ipsum",
+              },
+              Object {
+                "id": 13,
+                "selected": false,
+                "title": "Sit",
+                "url": "/lorem/sit",
+              },
+            ],
+            "id": 1,
+            "selected": false,
+            "title": "Lorem",
+            "url": "/lorem",
+          },
+          Object {
+            "id": 2,
+            "selected": false,
+            "title": "Amet",
+            "url": "/amet",
+          },
+          Object {
+            "children": Array [
+              Object {
+                "id": 31,
+                "selected": false,
+                "title": "Adipiscing",
+                "url": "/consectetur/adipiscing",
+              },
+              Object {
+                "id": 32,
+                "selected": false,
+                "title": "Eiusmod",
+                "url": "/consectetur/eiusmod",
+              },
+              Object {
+                "id": 33,
+                "selected": false,
+                "title": "Tempor",
+                "url": "/consectetur/tempor",
+              },
+            ],
+            "id": 3,
+            "selected": false,
+            "title": "Consectetur",
+            "url": "/consectetur",
+          },
+        ]
+      }
+      role="menubar"
+    />
+  </nav>
+</Fragment>
+`;
+
+exports[`NavBar should display header with button if window size is less than or equal to 800px 1`] = `
+<Fragment>
+  <nav
+    aria-label="This Is Wonderful Navigation"
+    id="navbar"
+  >
+    <img
+      alt=""
+      className="logo"
+      src="we_are_wonderful.png"
+    />
+    <div
+      className="nav-btn-container"
+    >
+      <button
+        aria-label="open menu"
+        className="nav-btn  false"
+        onClick={[Function]}
+      >
+        MENU
+      </button>
+      <div
+        className="triangle"
+      />
+    </div>
+  </nav>
+</Fragment>
+`;

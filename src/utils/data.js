@@ -4,7 +4,7 @@ export const menuData = {
       title: 'Lorem',
       id: 1,
       selected: false,
-      url: 'lorem',
+      url: '/lorem',
       children: [
         {
           title: 'Dolor',
@@ -36,7 +36,7 @@ export const menuData = {
       title: 'Consectetur',
       id: 3,
       selected: false,
-      url: 'consectetur',
+      url: '/consectetur',
       children: [
         {
           title: 'Adipiscing',

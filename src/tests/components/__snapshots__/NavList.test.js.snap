@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavList Should list NavItems if there are items available 1`] = `
+<ul>
+  <NavItem
+    key="31"
+    navItem={
+      Object {
+        "id": 31,
+        "selected": false,
+        "title": "Adipiscing",
+        "url": "/consectetur/adipiscing",
+      }
+    }
+  />
+  <NavItem
+    key="32"
+    navItem={
+      Object {
+        "id": 32,
+        "selected": false,
+        "title": "Eiusmod",
+        "url": "/consectetur/eiusmod",
+      }
+    }
+  />
+  <NavItem
+    key="33"
+    navItem={
+      Object {
+        "id": 33,
+        "selected": false,
+        "title": "Tempor",
+        "url": "/consectetur/tempor",
+      }
+    }
+  />
+</ul>
+`;
+
+exports[`NavList Should not list NavItems if there are not items available 1`] = `<ul />`;

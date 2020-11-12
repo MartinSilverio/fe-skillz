@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavAccordion Should display accessible react accordion with accordion item that have children and accordion items that don't 1`] = `
+<div
+  className="accordion-container"
+>
+  <Accordion
+    allowZeroExpanded={true}
+    className="nav-accordion"
+  >
+    <AccordionItem
+      className="nav-accordion-item"
+      key="1"
+      uuid={1}
+    >
+      <AccordionItemHeading
+        className="nav-accordion-heading"
+        onClick={[Function]}
+      >
+        <AccordionItemButtonWrapper
+          className="nav-accordion-btn"
+        >
+          <span
+            className="accordion-title selected"
+          >
+            Lorem
+          </span>
+          <AccordionItemState>
+            <Component />
+          </AccordionItemState>
+        </AccordionItemButtonWrapper>
+      </AccordionItemHeading>
+      <AccordionItemPanel
+        className="nav-accordion-panel"
+      >
+        <NavList
+          className="accordion-subnav"
+          navItems={
+            Array [
+              Object {
+                "id": 11,
+                "selected": false,
+                "title": "Dolor",
+                "url": "/lorem/dolor",
+              },
+              Object {
+                "id": 12,
+                "selected": false,
+                "title": "Ipsum",
+                "url": "/lorem/ipsum",
+              },
+              Object {
+                "id": 13,
+                "selected": false,
+                "title": "Sit",
+                "url": "/lorem/sit",
+              },
+            ]
+          }
+        />
+      </AccordionItemPanel>
+    </AccordionItem>
+    <AccordionItem
+      className="nav-accordion-item"
+      key="2"
+      uuid={2}
+    >
+      <AccordionItemHeading
+        className="nav-accordion-heading"
+        onClick={[Function]}
+      >
+        <AccordionItemButtonWrapper
+          className="nav-accordion-btn"
+        >
+          <span
+            className="accordion-title false"
+          >
+            Amet
+          </span>
+        </AccordionItemButtonWrapper>
+      </AccordionItemHeading>
+    </AccordionItem>
+  </Accordion>
+</div>
+`;

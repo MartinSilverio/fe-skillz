@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavItem Should not have NavList if navItem has no children 1`] = `
+<li
+  className="nav-item"
+  role="none"
+>
+  <NavLink
+    activeClassName="selected"
+    aria-expanded={false}
+    aria-haspopup={false}
+    isActive={[Function]}
+    onBlur={[Function]}
+    onFocus={[Function]}
+    onKeyPress={[Function]}
+    role="menuitem"
+    to="/amet"
+  >
+    Amet
+  </NavLink>
+</li>
+`;
+
+exports[`NavItem Should utilize NavList if navItem has children 1`] = `
+<li
+  className="nav-item"
+  role="none"
+>
+  <NavLink
+    activeClassName="selected"
+    aria-expanded={false}
+    aria-haspopup={true}
+    isActive={[Function]}
+    onBlur={[Function]}
+    onFocus={[Function]}
+    onKeyPress={[Function]}
+    role="menuitem"
+    to="/consectetur"
+  >
+    Consectetur
+  </NavLink>
+  <NavList
+    aria-label="Consectetur"
+    className="subnav"
+    navItems={
+      Array [
+        Object {
+          "id": 33,
+          "selected": false,
+          "title": "Tempor",
+          "url": "/consectetur/tempor",
+        },
+      ]
+    }
+    role="menu"
+  />
+</li>
+`;
